@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav{
+    background-color: rgb(248, 174, 3);
+    top: 0;
+    left: 0;
+    height: 7%;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 3px 5px rgb(173, 172, 172);
+}
+
+.nav .leftNav{
+    display: flex;
+    justify-content: center;
+    margin-left:5% ;
+    margin-top: -0.6%;
+}
+
+.nav .rightNav{
+    margin-top: 1.3%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-size: 1.2rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10% 0%;
+    margin-bottom: 15%
+}
+
+header .leftbanner{
+    margin-top : 20%;
+    margin-left : 50px;
+}
+
+header .leftbanner h1{
+    color: rgba(12, 12, 12, 0.98);
+    font-size: 2.4rem;
+}
+
+header .leftbanner h3{
+    margin-top: -20px;
+    color: rgb(181, 118, 1);
+}
+
+.adoptBtn{
+    background-color: #f9bc04;
+    color: rgb(252, 250, 250);
+    border: 2px solid #f9bc04;
+    border-radius: 30px;
+    padding: 6px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.adoptBtn:hover {
+    background-color: #fbfbf9;
+    color: rgb(4, 4, 4); 
+    border-color: rgb(231, 143, 3);
+  }
+
+.dogy{
+    margin-top: 15%;
+    width: 70%;
+}
+
+main{
+    background-color: rgb(248, 174, 3);
+    padding: 5px 100px;
+    width: 70%;
+    margin: 3%;
+    margin-left: 6.5%;
+    margin-bottom: 9%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    box-shadow: 5px 10px 5px rgb(173, 172, 172);
+}
+
+.dog1 img{
+    width: 70%;
+    margin-left: 30%;
+    margin-bottom: 1%;
+}
+
+
+.dog2 img{
+    width: 70%;
+    margin-left: 30%;
+}
+
+
+.dog3 img{
+    width: 90%;
+    margin-left: 30%;
+}
+
+
+.dog4 img{
+    width: 50%;
+    margin-left: 30%;
+}
+
+footer{
+    background-color: #e3e3e1;
+    padding: 5px 100px;
+    width: 70%;
+    margin: 3%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+main h2{
+    font-size: 1.8rem;
+    color: #fffffe;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        height: 4%;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav .leftNav {
+        display: none;
+    }
+
+    .nav .rightNav {
+        margin-top: 5px;
+        margin-right: 0;
+        gap: 60px;
+        font-size: 1rem;
+   
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 0 5%;
+        margin-bottom: 5%;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .leftbanner {
+        margin: 2% 0 0 0;
+    }
+
+    header .leftbanner h1 {
+        font-size: 1.8rem;
+    }
+
+    .adoptBtn {
+        font-size: 1rem;
+        padding: 8px 20px;
+        margin-top: 10px;
+    }
+
+    .dogy {
+        margin-top: 10%;
+        width: 70%;
+    }
+
+    main {
+        padding: 10px;
+        width: 90%;
+        margin: 5% auto;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5%;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .dog1 img,
+    .dog2 img,
+    .dog3 img,
+    .dog4 img {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        width: 90%;
+        padding: 10px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+}
